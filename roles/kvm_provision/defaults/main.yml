@@ -1,0 +1,13 @@
+---
+# defaults file for kvm_provision
+base_image_name: debian-12-genericcloud-amd64-daily-20240825-1850.qcow2
+base_image_url: https://cloud.debian.org/images/cloud/bookworm/daily/20240825-1850/{{ base_image_name }}
+base_image_sha: 310cbdd0309841ae85d24a98e6b2c0bde97e9ddb0a9bc1a5b303a15b3f9ed4a4687e30799f765a0d0fb253ada631888f1e3ffef621f7160d5deb5a29c96e3650
+libvirt_pool_dir: "/var/lib/libvirt/images"
+vm_name: f34-dev
+vm_vcpus: 2
+vm_ram_mb: 2048
+vm_net: Internet
+vm_root_pass: test123
+cleanup_tmp: no
+ssh_key: /home/joe/id_rsa.pub
